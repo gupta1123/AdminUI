@@ -1,0 +1,90 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Styles to remove button borders */
+table button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+table button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+table button.edit-button {
+  margin-right: 10px;
+}
+
+/* Existing styles... */
+
+.delete-selected-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+}
+
+.delete-selected-button:hover {
+  background-color: darkred;
+}
+
+.pagination-button {
+  background-color: #2e90db;
+  color: #fff;
+  padding: 8px 16px;
+  margin-right: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.pagination-button:hover {
+  background-color: #1c6ba8;
+}
+
+.pagination-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.edit-icon-container {
+  display: inline-block;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 4px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.pencil-icon {
+  color: gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.search-input {
+  width: calc(100% - width of other elements);
+  /* other styling properties... */
+}
